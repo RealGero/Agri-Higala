@@ -95,22 +95,23 @@
                             <div class="card my-3">
                                 <div class="card-body ">
                                     <h5 class="card-title">Update valid ID</h5>
-                                    <form action="{{action('')}}" method="POST">
+                                    <div class="row">      
+                                    </div>
                                     @csrf
                                     <div class="row d-flex justify-content-center p-2">
-                                            <img src="/images/lansones.jpg"  alt="" >
+                                        <img src="/storage/buyer/valid-id-front/{{$user->buyer->valid_id_front}}"  alt="valid-id-front">
                                     </div>
                                     <div class="row d-flex justify-content-center">
-                                            <img src="/images/lansones.jpg"  alt="" class="d-block"> 
+                                        <img src="/storage/buyer/valid-id-back/{{$user->buyer->valid_id_back}}"  alt="valid-id-back">
        
                                     </div> 
-                                    @method('PUT')
+                               
                                     <div class="row my-3">
-                                        <div class="col-12 ">
-                                            <a class="btn btn-primary d-flex justify-content-center" href="#" role="button">Upload</a>
-                                         </div>
-                                        </form>
-                                    </div>                                   
+                                        <div class="col-12">
+                                            <button type="button" class="btn btn-primary btn-block btn-sm" data-toggle="modal" data-target="#update-valid-id">Upload Photo</button>
+                                          </div> 
+                                    </div> 
+                                    @include('modals.modals')                                  
                                 </div>
                             </div>
                         </div>

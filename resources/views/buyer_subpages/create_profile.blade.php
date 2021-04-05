@@ -24,7 +24,6 @@
                   <div class="row ">
                     <div class="col-12 d-flex justify-content-center">
                       <img src="/storage/user/{{$user->user_image}}" class="rounded-circle" alt="profile-pic">
-                      
                     </div>
                   </div>
 
@@ -108,9 +107,6 @@
                             <div class="text-danger">{{$errors->first('email')}}</div>  
                           </div>
                     </div>
-
-               
-                   
                     <div class="row profile-input">
                       <div class="col-12">
   

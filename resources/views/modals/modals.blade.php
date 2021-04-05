@@ -99,21 +99,24 @@
   <div class="modal-add-id">
       <div class="row">
           <div class="col-12">
-              <div class="modal fade" id="add-id-front" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal fade" id="update-valid-id" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Valid ID front page</h5>
+                        <h5 class="modal-title" id="exampleModalLongTitle">Valid ID front and back</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
-                      <form action="{{action ('UsersController@updateUserImage')}}" method="POST" enctype="multipart/form-data" >
+                      <form action="{{action ('UsersController@updateValidId')}}" method="POST" enctype="multipart/form-data" >
                         @csrf
                         <div class="modal-body">
                           <div class="card col-11 mx-auto">
                           <div class="card-body">
-                            <input type="file" name="user_image">
+                            <input type="file" name="idfront">
+                          </div>
+                          <div class="card-body">
+                            <input type="file" name="idback">
                           </div>
                         </div>
                         

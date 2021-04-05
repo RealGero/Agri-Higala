@@ -219,9 +219,43 @@ class UsersController extends Controller
         return redirect('/buyer/user/account')->with('password','Password successfully changed');
     }
 
-    public function updateValidId()
+    public function updateValidId(Request $request)
     {
-        return 123;
+
+         //    $buyer_id = Buyer::select('buyer_id')->where('user_id',Auth::id())->first();
+         //    $seller = Buyer::find($buyer_id['id']);
+         $id = Auth::id();
+        $user = User::find($id);
+      
+       $buyer = User::find($id)->buyer;
+ 
+       if($request->hasFile('idfront'))
+       {
+           $filenameWithExt = $request->file('idfront')->getClientOriginalName();
+           $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME); 
+           $extension = $request->file('idfront')->getClientOriginalExtension();
+           $filenameToStore = $filename.'.'.time().'.'.$extension;
+           $path = $request->file('idfront')->storeAs('public/buyer/valid-id-front',$filenameToStore); 
+
+           $buyer->valid_id_front = $filenameToStore;
+           
+       };
+
+       if($request->hasFile('idback'))
+       {
+           $filenameWithExt = $request->file('idback')->getClientOriginalName();
+           $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME); 
+           $extension = $request->file('idback')->getClientOriginalExtension();
+           $filenameToStore = $filename.'.'.time().'.'.$extension;
+           $path = $request->file('idback')->storeAs('public/buyer/valid-id-back',$filenameToStore); 
+
+            $buyer->valid_id_back = $filenameToStore;
+           
+       };
+     
+      $buyer->save();
+
+       return view('showprofile.user-account',compact('user'))->with('success','Successfully uploaded an image');
     }
 
     public function sellerIndex(){
@@ -231,6 +265,24 @@ class UsersController extends Controller
 
     public function sellerProfile()
     {
+        $id = Auth::id();
+        $user_id = User::find($id);
+
+
+        $user = new User;
+        $user->username = 'japhet';
+        $user->user_type = '2';
+        $user->password = Hash::make('1234567890');
+        $user->f_name = 'asdasd';
+        $user->m_name = 'asdasdd';
+        $user->l_name = 'asdasds';
+        $user->mobile_number = '12345678911';
+        $user->email = 'amang@gmail.com';
+
+        $seller = new Seller;
+        $seller->user_id = Auth::id();
+        
+
 
         return view ('Seller_view.seller-profile');
     }

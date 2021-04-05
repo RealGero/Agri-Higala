@@ -73,7 +73,7 @@ Route::resource('users', 'UsersController');
 //Seller-----------------------------------------------------------------------------------------
 
 
-   
+        
 
         Route::get('/seller/dashboard','UsersController@sellerIndex');
         Route::get('/seller/product/my-product', 'sellercontroller\ProductsController@productMyProduct');
