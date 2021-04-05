@@ -1,0 +1,44 @@
+@extends('layouts.app')
+
+
+@section('content')
+   
+   <div class="container">
+      <div class="history-container">
+         <div class="row">
+            <div class="col-10 mx-auto">
+               <h3>History</h3>
+               <div class="card">
+                  <div class="card-body">
+                     <div class="row">
+                        <div class="col-12">
+                           <table class="table table-borderless">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Order ID</th>
+                                  <th scope="col">Seller's name</th>
+                                  <th scope="col">Status</th>
+                                  <th scope="col">Total price</th>
+                                  <th scope="col">Date</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                  <td>@mdo</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+@endsection

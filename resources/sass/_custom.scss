@@ -1,0 +1,729 @@
+body{
+    background-color: white;
+}
+.container-fluid{
+
+     padding:0px;
+}
+//no padding in ul
+
+.remove-pad-ul{
+    padding: 0;
+}
+
+.remove-bull-li{
+    list-style-type: none;
+}
+//browse style 
+ .bg{
+
+    
+    // margin: 0;
+    background-image: url("/images/background_home.png");
+    height: 800px;
+   
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    
+}
+
+.word_logo{
+
+    // left: 0;
+    // right: 0;
+    // position: absolute;
+    // bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 500px;
+}
+
+.browse_nav{
+
+    background-image: url("/images/background_2.png");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 700px;
+    width: 1000px;
+    background-position: center center;
+
+
+}
+
+.browse_navbar {
+    
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+.home_nav{
+    padding-right: 66px;
+    padding-left: 66px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+
+}
+
+.browse_nav p{
+    padding-top: 200px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+
+}
+
+.welcome_nav{
+
+    padding-top: 19px;
+}
+
+//sidenav
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #426d49;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a:hover {
+    color: yellow;
+  }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.1s;
+  }
+  
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  #seller-word{
+      font-size: 1rem;
+  }
+
+//navbarbackground
+
+.topbar{
+
+    background-image: url("/images/topbar.png");
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+
+#navbar-bg {
+    height: 146px;
+    padding-left: 110px;
+    
+}
+//user icon dropdown
+
+#dropdown-user {
+    border: 0;
+    background: 0;
+}
+//fontawesome color
+
+.fontawesome-color{
+
+    color: white;
+    padding-right: 21px;
+}
+
+
+
+#navbar-word{
+   
+    width: 210px;
+}
+
+
+.col-6.left-side{
+
+    display: flex;
+    height: 149px;
+    align-items: center;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 110px;
+}
+//login as a seller word
+
+.logout{
+
+    position: absolute;
+    bottom: 0;
+}
+//browse view image
+
+.browse-img-wrapper {
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.browse img {
+    height: auto;
+    width: auto; 
+    max-width: 8rem;
+    padding-bottom: 2rem;
+    // max-height: 88px;
+
+}
+
+.browse-img{
+    padding: 50px;
+    justify-content: space-between;
+}
+
+
+//pagination of browse
+
+.pagination>li>a, .pagination>li>span 
+{ border-radius: 50% !important;margin: 0 5px;}
+//dropdowns for browse view
+.dropdowns-parent{
+
+    width: 100%;
+}
+//profile view
+.profile{
+
+    padding-top: 20px;
+}
+.profile-input{
+    padding: 15px 0px;
+    // padding-bottom: 20px;
+}
+//gender input
+
+.gender{
+    padding-left:7rem;
+}
+.dropdowns {
+    padding: 25px 25px;
+    border: solid;
+    margin: 25px 15px;
+    border-width: 1px;
+    border-radius: 5px
+}
+
+//orders view
+.order-card{
+    width: 50rem;
+}
+.order_view img{
+
+    width:5rem;
+
+}
+.order_view h6{
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button-size .btn {
+    width: 100%;
+}
+//product-detail view
+.product-detail img {
+    width: 12rem;
+}
+
+.product-detail ul {
+    list-style-type: none;
+}
+
+.product-detail-btn a {
+    width: 5rem;
+}
+//cart view
+.cart img {
+    width: 7rem;
+}
+.cart-quantity{
+
+    width: 4rem;
+}
+//checkout
+
+.checkout img{
+    width: 8rem;
+}
+.checkout table{
+    table-layout: fixed;
+}
+
+.checkout ul {
+    list-style-type: none;
+    
+}
+//payment method
+.button-payment a {
+    width: 37%;
+}
+.checkout-btn{
+    margin-top: 6rem;
+    font-size: 1.5rem;
+    margin-left: 10rem;
+}
+
+//order received view
+
+.order-received img {
+    width: 8rem;
+}
+
+.order-received table{
+    table-layout: fixed;
+}
+//buyer order return
+
+.container-return img{
+    width: 7rem;
+    
+}
+
+//show seller from buyer
+
+.follow-chat a {
+    width: 5rem;
+}
+
+//profile form
+.profile img {
+    height: 8em;
+    width: 8rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #426d49;
+}
+
+.profile h5{
+
+    max-width: 13rem;
+}
+
+.profile-upload-btn
+{
+    width: 8rem;
+}
+
+.display-product img {
+    width: 9rem;
+    padding-bottom: 1rem;
+}
+
+.container-return table{
+    table-layout: fixed;
+}
+//reviews of a seller
+.card-reviews  {
+    width: 34rem;
+}
+.card-reviews img{
+
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #426d49;
+}
+
+//chat message
+.other-msg {
+    max-width: 20rem;
+    display: inline-block;
+}
+.owned-msg{
+    max-width: 20rem;
+    display: inline-block;
+
+}
+
+
+//messages img
+.inbox-container img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #426d49;
+    border-radius: 50%;
+}
+// .card-reviews table {
+//     table-layout: fixed;
+// }
+
+//EDIT profile
+
+.edit-profile img {
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #426d49;
+}
+
+//user-Account
+
+.account-profile img{
+
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #426d49;
+}
+
+
+
+.upload-photo-btn{
+
+    position: absolute;
+    bottom: 0;
+}
+#update-id-btn{
+
+    width: 6rem;
+}
+
+.account-profile img {
+    width: 15rem;
+    height: 1;
+    height: 10rem;
+}
+//about us view
+.about-us img{
+
+    width: 18rem;
+}
+//view order details
+.progressbar{
+    counter-reset: step;
+  }
+
+//contact Us
+
+.contactus-icon{
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 8px;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+}
+
+//discount view
+
+.discount p{
+
+    text-decoration: line-through red;
+}
+.discount .btn{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 8rem;
+}
+
+.progressbar{
+    counter-reset: step;
+}
+.progressbar li{
+
+    list-style-type: none;
+}
+.progressbar li::before{
+    content:"";
+    
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    line-height: 27px;
+    background: white;
+    color: #bebebe;
+    text-align: center;
+    font-weight: bold;
+}
+.progressbar li::after {
+    content: "";
+    position: absolute;
+    width: 49rem;
+    height: 3px;
+    background-color: #ddd;
+    top: 24px;
+    left: 15%;
+    z-index: -1;
+  }
+  .progressbar li:first-child::after{
+
+    content: none;
+  }
+  .progressbar li.active{
+      color: green;
+  }
+  .progressbar li.active::before{
+    //   border-color: green;
+      background-color: #32CD30;
+  }
+
+.myorders-order{
+
+    padding-top: 1rem;
+}
+.myorders-order a{
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.myorders-order li{
+
+    margin-right: .5rem;
+    list-style-type: none;
+}
+
+.myorders-order img{
+    width: 6rem;
+}
+
+
+.myorders-order table{
+    table-layout: fixed;
+}
+
+
+.myorders-return img{
+    width: 6rem;
+}
+
+
+.myorders-return table{
+    table-layout: fixed;
+}
+
+.myorders-cancellation img{
+
+    width: 6rem;
+}
+
+.myorders-cancellation table{
+    table-layout: fixed;
+}
+
+//left bar
+.leftnav-buyer {
+    // margin-top:9.30rem;
+    // height: 15rem;
+    width: 13rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+  left: 0;
+  background-color: white;
+//   overflow-x: hidden;
+  padding:1rem 0;
+}
+
+.leftnav-buyer a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+  }
+
+.leftnav-buyer a:hover {
+    // color: #f1f1f1;
+    font-weight: bold;
+}
+
+// @media screen and (max-height: 450px) {
+//     .leftnav-buyer  {padding-top: 15px;}
+//     .leftnav-buyer  a {font-size: 18px;}
+//   }
+
+
+//SELEER VIEW ------------------------------------------------------------------------------------
+
+.myproduct img{
+    width: 6rem;
+}
+.myproduct table{
+
+    table-layout: fixed;
+}
+
+.myorder table{
+    table-layout: fixed;
+}
+
+.myorder a{
+
+    margin-top: 1rem;
+}
+
+.order-detail img{
+
+    width: 6rem;
+}
+.order-detail table{
+    table-layout: fixed;
+}
+.ratings table{
+    table-layout: fixed;
+
+}
+
+.navigation-items a{
+    padding-left: 3.8rem;
+    font-size: 1rem;
+}
+//rider image from seller
+
+.myrider table{
+    table-layout: fixed;
+
+}
+
+.myrider img{
+    width: 6rem;
+
+}
+
+
+
+//Rider ----------------------------------------------------------------------------------------------
+
+//footer
+.footer{
+    // padding-top: 10px;
+    // position: fixed;
+    // left: 0;
+    // bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    height: 183px;
+   
+
+}
+
+.footer img{
+    height: 50px;
+
+}
+
+//other call
+
+ul.no-bullet{
+
+    list-style-type: none;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+
+// .bg{
+
+//     background-image: url("/images/background_home.png");
+//     // height: 100%;
+//     background-position: center center;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+// }
+    // html, body {
+    //     background-color: #fff;
+    //     color: #636b6f;
+    //     font-family: 'Nunito', sans-serif;
+    //     font-weight: 200;
+    //     height: 100vh;
+    //     margin: 0;
+    // }
+
+    // .full-height {
+    //     height: 100vh;
+    // }
+
+    // .flex-center {
+    //     align-items: center;
+    //     display: flex;
+    //     justify-content: center;
+    // }
+
+    // .position-ref {
+    //     position: relative;
+    // }
+
+    // .top-right {
+    //     position: absolute;
+    //     right: 10px;
+    //     top: 18px;
+    // }
+
+    // .content {
+    //     text-align: center;
+    // }
+
+    // .title {
+    //     font-size: 84px;
+    // }
+
+    // .links > a {
+    //     color: #636b6f;
+    //     padding: 0 25px;
+    //     font-size: 13px;
+    //     font-weight: 600;
+    //     letter-spacing: .1rem;
+    //     text-decoration: none;
+    //     text-transform: uppercase;
+    // }
+
+    // .m-b-md {
+    //     margin-bottom: 30px;
+    // }
